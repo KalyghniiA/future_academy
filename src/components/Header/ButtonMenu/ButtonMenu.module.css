@@ -1,0 +1,12 @@
+.btn {
+    border: none;
+    background: none;
+    display: none;
+}
+
+@media screen and (max-width: 900px) {
+    .btn {
+        display: block;
+        margin-left: auto;
+    }
+}

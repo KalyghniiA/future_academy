@@ -1,0 +1,16 @@
+.nav-list {
+    display: flex;
+    column-gap: 40px;
+}
+
+.nav__item--menu {
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+}
+
+@media screen and (max-width: 900px) {
+    .nav-list {
+        display: none;
+    }
+}

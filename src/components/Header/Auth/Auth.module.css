@@ -1,0 +1,11 @@
+.link {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+@media screen and (max-width: 900px) {
+    .link {
+        display: none;
+    }
+}
