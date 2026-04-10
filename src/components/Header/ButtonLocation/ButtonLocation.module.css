@@ -1,0 +1,14 @@
+.btn {
+    display: flex;
+    align-items: stretch;
+    column-gap: 7px;
+    border: none;
+    background: none;
+}
+
+
+@media screen and (max-width: 900px) {
+    .btn {
+        display: none;
+    }
+}
