@@ -1,0 +1,19 @@
+.container {
+    width: 20%;
+}
+
+.element {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 243%;
+}
+
+.element a:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 785px) {
+    .container {
+        display: none;
+    }
+}

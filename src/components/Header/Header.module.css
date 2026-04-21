@@ -4,7 +4,6 @@
 
 .header {
     padding: 20px;
-
     color: var(--black);
     font-size: 14px;
     font-weight: 500;
@@ -24,11 +23,22 @@
     line-height: 163%;
 }
 
-@media screen and (max-width: 1050px) {
+.logo {
+    display: block;
+    width: 100px;
+    height: 70px;
+}
 
+
+@media screen and (max-width: 1050px) {
     .phone {
         display: none;
     }
+}
 
-
+@media (max-width: 900px) {
+    .logo {
+        width: 57px;
+        height: 41px;
+    }
 }

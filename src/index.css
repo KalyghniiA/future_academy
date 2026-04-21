@@ -4,6 +4,9 @@
     --blue: #27aae1;
     --white: #fff;
     --black: #000;
+
+    --logo-light-theme: #00093C;
+    --logo-dark-theme: white;
 }
 
 body {
@@ -27,3 +30,7 @@ a {
     text-decoration: none;
 }
 
+p {
+    margin: 0;
+    padding: 0;
+}

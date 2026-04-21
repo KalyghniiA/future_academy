@@ -9,7 +9,7 @@ export function Header() {
 	return (
 		<div className={styles.container}>
 			<header className={styles.header}>
-				<Logo />
+				<Logo theme={"light"} className={styles.logo}/>
 				<ButtonMenu />
 				<Navigation />
 				<ButtonLocation />
