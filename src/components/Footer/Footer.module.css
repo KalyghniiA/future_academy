@@ -1,0 +1,28 @@
+.footer {
+    background-color: var(--dark-blue);
+    color: var(--white);
+}
+
+.footer a {
+    color: var(--white);
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 70px 20px 50px;
+    display: flex;
+    column-gap: 40px;
+    justify-content: space-between;
+}
+
+
+@media screen and (max-width: 785px) {
+    .container {
+        justify-content: center;
+    }
+}
