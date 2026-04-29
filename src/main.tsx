@@ -4,12 +4,17 @@ import "./index.css";
 import {createBrowserRouter, RouterProvider} from "react-router-dom";
 import {MainLayout} from "./layouts/MainLayout/MainLayout.tsx";
 import {Ui} from "./pages/UI/UI.tsx";
+import {Main} from "./pages/Main/Main.tsx";
 
 const router = createBrowserRouter([
 	{
 		path: "/",
 		element: <MainLayout />,
 		children: [
+			{
+				path: "/",
+				element: <Main />
+			},
 			{
 				path: "/UI",
 				element: <Ui />
