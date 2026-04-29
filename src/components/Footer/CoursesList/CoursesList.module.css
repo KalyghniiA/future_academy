@@ -5,7 +5,9 @@
 .element {
     font-weight: 400;
     font-size: 14px;
-    line-height: 243%;
+    /*line-height: 243%;*/
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .element a:hover {

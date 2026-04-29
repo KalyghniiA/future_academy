@@ -1,0 +1,115 @@
+.container {
+    position: relative;
+    display: flex;
+    background-color: white;
+    border-radius: 15px;
+    padding: 40px;
+    width: 100%;
+    max-width: 1160px;
+    justify-content: right;
+    box-sizing: border-box;
+    margin-bottom: -40px;
+}
+
+.container::after {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    background: linear-gradient(90deg, #f7941d 0%, #27aae1 100%);
+    filter: blur(15px);
+    z-index: -1;
+    opacity: 0.3;
+}
+
+.text-container {
+    position: relative;
+    max-width: 380px;
+    margin-left: min(40px, 200px);
+    margin-right: 20px;
+    padding: 15px;
+    border-radius: 20px;
+    border: 2px solid transparent;
+    background: linear-gradient(white, white 0) padding-box, linear-gradient(90deg, #f7941d 0%, #27aae1 100%) border-box;
+    anchor-name: --text;
+}
+
+.image-container {
+    position: absolute;
+    right: calc((anchor(--text left) + 15px));
+    top: 24px;
+}
+
+
+
+.text-container:before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 12px solid;
+    border-left: 12px solid;
+    border-right: 12px solid;
+    border-bottom: 12px solid;
+    border-color: #f7941d #f7941d transparent transparent;
+    left: -24px;
+    bottom: 52px;
+}
+
+.text-container:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 10px solid;
+    border-left: 10px solid;
+    border-right: 10px solid;
+    border-bottom: 10px solid;
+    border-color: white white transparent transparent;
+    left: -19px;
+    bottom: 54px;
+}
+
+.header {
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 163%;
+}
+
+@media screen and (max-width: 960px) {
+    .container {
+        flex-direction: column;
+        justify-content: center;
+        gap: 30px;
+        align-items: center;
+        margin-bottom: auto;
+
+    }
+
+    .container::after {
+        display: none;
+    }
+
+    .text-container {
+        margin-right: 0;
+    }
+
+    .image-container {
+        top: auto;
+        bottom: anchor(--text bottom);
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .container {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
